@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современная поликлиника | Здоровье и забота</title>
+    <link rel="stylesheet" href="css\main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> /*Шрифты от гугла и доп начертания*/
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-icon">❤</span>
+                    <span class="logo-text">Современная поликлиника</span>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Главная</a>
+                    <a href="#staff" class="nav-link">Наш персонал</a>
+                    <a href="#docs" class="nav-link">Документация</a>
+                    <a href="#news" class="nav-link">Новости</a>
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </nav>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Забота о вашем здоровье — наш главный приоритет</h1>
+                    <p class="hero-text">Современное оборудование, квалифицированные специалисты и индивидуальный подход к каждому пациенту</p>
+                    <a href="#contacts" class="btn">Записаться на прием</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="staff" class="section staff-section">
+            <div class="container">
+                <h2 class="section-title">Наш персонал</h2>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-photo" style="background-image: url('https://cdn.leonardo.ai/users/a4729cee-167f-47d4-ba44-b3ebecee75cf/generations/a6ac8ec5-f785-4798-a7c8-06eb2ae973b1/segments/4:4:1/Flux_Dev_A_40yearold_female_therapist_with_a_gentle_and_compas_3.jpg');"></div>
+                        <h3 class="staff-name">Иванова Анна Петровна</h3>
+                        <p class="staff-position">Терапевт высшей категории</p>
+                        <p class="staff-bio">Стаж работы 15 лет, специалист по внутренним болезням.</p>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-photo" style="background-image: url('https://cdn.leonardo.ai/users/a4729cee-167f-47d4-ba44-b3ebecee75cf/generations/1f058f94-8992-4e35-a8e3-4982f5c6e7e7/segments/2:4:1/Flux_Dev_A_middleaged_man_a_skilled_surgeon_stands_confidently_1.jpg');"></div>
+                        <h3 class="staff-name">Петров Сергей Иванович</h3>
+                        <p class="staff-position">Хирург</p>
+                        <p class="staff-bio">Опыт работы 12 лет, проводит операции любой сложности.</p>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-photo" style="background-image: url('https://cdn.leonardo.ai/users/a4729cee-167f-47d4-ba44-b3ebecee75cf/generations/eff30604-b694-4226-90af-8bfdaa75dadb/segments/1:4:1/Flux_Dev_a_35yearold_female_pediatrician_with_a_gentle_face_sm_0.jpg');"></div>
+                        <h3 class="staff-name">Смирнова Ольга Васильевна</h3>
+                        <p class="staff-position">Педиатр</p>
+                        <p class="staff-bio">Специалист по детским болезням с 10-летним стажем.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="section docs-section">
+            <div class="container">
+                <h2 class="section-title">Нормативная документация</h2>
+                <div class="docs-list">
+                    <div class="doc-item">
+                        <h3 class="doc-title">Лицензия на медицинскую деятельность</h3>
+                        <p class="doc-date">Действительна до: 12.12.2025</p>
+                        <a href="docs_pdf/liecense.pdf" class="doc-link" target="_blank" type="application/pdf">Открыть</a>
+                        <a href="docs_pdf/liecense.pdf" class="doc-link" download>Скачать PDF</a>
+                    </div>
+                    <div class="doc-item">
+                        <h3 class="doc-title">Свидетельство о государственной регистрации</h3>
+                        <p class="doc-date">Выдано: 15.03.2010</p>
+                        <a href="docs_pdf/registr.pdf" class="doc-link" target="_blank" type="application/pdf">Открыть</a>
+                        <a href="docs_pdf/registr.pdf" class="doc-link">Скачать PDF</a>
+                    </div>
+                    <div class="doc-item">
+                        <h3 class="doc-title">Правила внутреннего распорядка</h3>
+                        <p class="doc-date">Обновлено: 01.09.2023</p>
+                        <a href="docs_pdf/rules.pdf" class="doc-link" target="_blank" type="application/pdf">Открыть</a>
+                        <a href="docs_pdf/rules.pdf" class="doc-link">Скачать PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-feed">
+            <div class="container">
+                <h2 class="section-title">Последние новости</h2>
+                <div class="news-grid" id="news-container">
+                    <!-- Новости будут загружаться сюда автоматически -->
+                </div>
+                <a href="news.html" class="all-news-link">Все новости →</a>
+            </div>
+        </section>
+
+        <section id="contacts" class="section contacts-section">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contacts-wrapper">
+                    <div class="contacts-info">
+                        <div class="contact-item">
+                            <h3 class="contact-title">Адрес</h3>
+                            <p class="contact-text">г. Архангельск, пл.Ленина, д. 1</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-title">Телефон</h3>
+                            <p class="contact-text">+7 (495) 123-45-67</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-title">Email</h3>
+                            <p class="contact-text">info@modernclinic.ru</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-title">Часы работы</h3>
+                            <p class="contact-text">Пн-Пт: 8:00 - 20:00<br>Сб: 9:00 - 18:00<br>Вс: Выходной</p>
+                        </div>
+                    </div>
+                    <div class="contacts-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef1234567890abcdef&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <section class="appointment-section">
+                    <div class="container">
+                        <h2>Записаться на приём</h2>
+                        <form id="appointment-form" class="appointment-form">
+                            <div class="form-group">
+                                <label for="name">ФИО:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Телефон:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor">Врач:</label>
+                                <select id="doctor" name="doctor" required>
+                                    <option value="">Выберите врача</option>
+                                    <option value="Иванова А.П. (Терапевт)">Иванова А.П. (Терапевт)</option>
+                                    <option value="Петров С.И. (Хирург)">Петров С.И. (Хирург)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Дата:</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Время:</label>
+                                <input type="time" id="time" name="time" min="08:00" max="20:00" required>
+                            </div>
+                            
+                            <button type="submit" class="btn">Записаться</button>
+                        </form>
+                    </div>
+                </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <span class="logo-icon">❤</span>
+                    <span class="logo-text">Современная поликлиника</span>
+                </div>
+                <div class="footer-menu">
+                    <h4 class="footer-title">Меню</h4>
+                    <a href="#home" class="footer-link">Главная</a>
+                    <a href="#staff" class="footer-link">Персонал</a>
+                    <a href="#docs" class="footer-link">Документы</a>
+                    <a href="#news" class="footer-link">Новости</a>
+                    <a href="#contacts" class="footer-link">Контакты</a>
+                </div>
+                <div class="footer-contacts">
+                    <h4 class="footer-title">Контакты</h4>
+                    <p>г. Архангельск, пл.Ленина, д. 1</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@modernclinic.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Любая cовременная поликлиника. Все права защищены.</p>
+                <p>prod. by Arsenii Chuprakov</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">VK</a>
+                    <a href="#" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/appointment.js"></script>
+</body>
+</html>
